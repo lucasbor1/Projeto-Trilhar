@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_escuro"
+    tools:context=".atv_login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trilhar_aguia_logo"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="9dp"
+        android:onClick="signInWithGoogle">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="39dp"
+            android:src="@drawable/ic_google"
+            app:tint="@color/azul_escuro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Entre com a conta Google"
+            android:textColor="@color/azul_escuro"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</FrameLayout>

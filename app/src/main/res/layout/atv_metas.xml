@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_escuro"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:padding="16dp"
+    tools:context=".grafico.AtvGraph">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_escuro">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azul_escuro"
+            android:theme="?attr/actionBarTheme"
+            android:title=""
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/toolbarLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trilhar_aguia_logo_toolbar_small"
+            android:contentDescription="Logo"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suas metas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Meta 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxMeta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewMeta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coloque todas as despesas no aplicativo."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Meta 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxMeta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewMeta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veja todos os vídeos do módulo 1."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Meta 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxMeta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewMeta3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pague todas as despesas que tiver."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Meta 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxMeta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewMeta4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Economize R$ 100,00."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Meta 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxMeta5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewMeta5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abra uma conta em uma Fintech."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
