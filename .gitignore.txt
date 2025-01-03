@@ -1,0 +1,57 @@
+# Ignore Android specific files
+.idea/
+.gradle/
+build/
+local.properties
+*.iml
+
+# Ignore Gradle caches and logs
+.gradle
+**/build
+
+# Firebase
+google-services.json
+
+# Ignore temporary files
+*.swp
+*.temp
+*.tmp
+*.log
+*.bak
+*.orig
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore coverage reports
+*.lcov
+*.lst
+*.cover
+*.gcno
+*.gcda
+
+# Ignore JetBrains IDEs files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore Android Studio specific files
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/tasks.xml
+
+# Ignore generated folders
+captures/
+.externalNativeBuild
+.cxx
+
+# Miscellaneous
+.gradle
+local.properties
+.DS_Store
+*.apk
+*.ap_
